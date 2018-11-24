@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/index', 'QuestionController@index');
 Route::post('/index', 'QuestionController@store');
-Route::get('/create', 'QuestionController@create');
+Route::get('/create', 'QuestionController@create')->middleware('auth');
