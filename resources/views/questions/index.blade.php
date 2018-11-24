@@ -10,7 +10,7 @@
       
       <button class="btn btn-primary mr-2"style="padding:10px;" type="submit"><i class="fas fa-search"></i></button>
     
-      <a class="btn btn-outline-primary my-2 my-sm-0" href="#">Ask Questions</a>
+      <a class="btn btn-outline-primary my-2 my-sm-0" href="create">Ask Questions</a>
     </form>
 
 </div>

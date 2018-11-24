@@ -14,13 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/documentation', function () {
-    return view('documentation');
-});
-Route::get('/user', function () {
-    return view('user');
-});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/question', 'QuestionController@retrieve');
+Route::get('/index', 'QuestionController@index');
+Route::post('/index', 'QuestionController@store');
+Route::get('/create', 'QuestionController@create');
